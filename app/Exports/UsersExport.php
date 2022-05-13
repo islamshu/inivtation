@@ -12,6 +12,6 @@ class UsersExport implements FromCollection
     */
     public function collection()
     {
-        return Userinv::get(['name','email','phone','people_number']);
+        return Userinv::get(['name','email','phone','people_number','people']);
     }
 }

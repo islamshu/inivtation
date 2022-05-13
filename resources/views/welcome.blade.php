@@ -115,8 +115,11 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input name="people_number" type="text" class="form-control" placeholder="Number of Guests" required> </div>
+                                            <input name="people_number" type="number"  id="people_number"class="form-control" placeholder="Number of Guests" required> </div>
                                     </div>
+                                    <div id="mydiv" style="    width: 100%;
+                                    margin: 20px;"></div>
+
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
@@ -201,6 +204,25 @@
             });
         </script>
     </div>
+<script>
+$(document).ready(function(){
+      var c = 0;
+
+      $("#people_number").change(function(){
+        c = $("#people_number").val();
+
+        $("#mydiv").html("");
+
+        for(i=0;i<c;i++){
+
+              $("#mydiv").append('<input name="gust[]" type="text" class="form-control" placeholder="people number in English'+i+'" required>');
+        }
+      });
+
+      
+
+  });
+</script>
 </body>
 
 

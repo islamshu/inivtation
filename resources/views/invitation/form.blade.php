@@ -29,13 +29,35 @@
       </div>
       <div class="form-group">
         <label for="text">The number of people:</label>
-        <input type="text" class="form-control" id="text" required placeholder="The number of people" name="people_number">
+        <input type="text" class="form-control" id="people_number" required placeholder="The number of people" name="people_number">
       </div>
 
     
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    alert('dd');
+      var c = 0;
 
+      $("#people_number").change(function(){
+        alert('ff');
+        c = $("#people_number").val();
+
+        $("#mydiv").html("");
+
+        for(i=0;i<c;i++){
+              $("#mydiv").append('<input type="text" id="data'+i+'" name="data'+i+'" /><br/>');
+        }
+      });
+
+      
+
+  });
+</script>
 </body>
+
 </html>

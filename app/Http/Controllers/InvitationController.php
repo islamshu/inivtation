@@ -81,6 +81,7 @@ class InvitationController extends Controller
         $int->email = $request->email;
         $int->phone = $request->phone;
         $int->people_number =$request->people_number;
+        $int->people = json_encode($request->gust);
         $int->save();
 
     } 

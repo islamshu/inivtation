@@ -77,3 +77,4 @@
             <!-- #END# Basic Table -->
             <!-- Striped Rows -->
         @endsection
+        
