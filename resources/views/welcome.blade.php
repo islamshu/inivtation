@@ -83,7 +83,7 @@
             <!-- Our Story -->
 
             <!-- Confirmation -->
-            <div id="rsvp" class="section-padding bg-img bg-fixed" data-background="{{asset('front/images/banner-2.jpg')}}">
+            {{-- <div id="rsvp" class="section-padding bg-img bg-fixed" data-background="{{asset('front/images/banner-2.jpg')}}">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 bg-white p-40"> <span class="oliven-title-meta text-center">Will you attend?</span>
@@ -134,9 +134,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Gift Registry -->
-            <div id="gift" class="gift-section gift">
+            {{-- <div id="gift" class="gift-section gift">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 mb-30">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Footer -->
        
         </div>
